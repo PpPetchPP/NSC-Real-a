@@ -17,6 +17,7 @@ public class Inventory : MonoBehaviour
     public bool can_use_key;
     public bool openInven = false;
     public string check_not_full;
+    Door door_script;
     void Start()
     {
         status = GameObject.FindGameObjectWithTag("Player").GetComponent<Status_Player>();
@@ -116,6 +117,11 @@ public class Inventory : MonoBehaviour
                 status.add_hunger(5);
                 item.Remove(item[0]);
             }
+            if (item[0] == name_items[1] && can_use_key == true)
+            {
+                door_script.open(1);
+                item.Remove(item[0]);
+            }
         }
         else if (name_bot == "2")
         {
@@ -143,5 +149,11 @@ public class Inventory : MonoBehaviour
         }
 
         Check();
+    }
+
+    public void check_door(GameObject this_door) 
+    {
+        Debug.Log("Check");
+        door_script = this_door.GetComponent<Door>();
     }
 }
