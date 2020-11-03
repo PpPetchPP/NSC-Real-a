@@ -6,7 +6,6 @@ public class Door : MonoBehaviour
 {
     public Animator anim;
     public Inventory inven;
-    [SerializeField] public string name_obj;
     bool can_click = false;
     [SerializeField] int Door_number;
     void Start()
@@ -24,7 +23,8 @@ public class Door : MonoBehaviour
     {
         if (can_click == true && Door_number == key_number)
         {
-            anim.SetBool("open",can_click);
+            anim.SetTrigger("open");
+            Destroy(this.gameObject, 2f);
         }
     }
 

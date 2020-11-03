@@ -33,7 +33,7 @@ public class Inventory : MonoBehaviour
             canvas.SetActive(true);
             openInven = true;
         }
-        else if (Input.GetKeyDown(KeyCode.I) && openInven == true)
+        else if ((Input.GetKeyDown(KeyCode.I) && openInven == true) || (Input.GetKeyDown(KeyCode.Escape) && openInven == true))
         {
             canvas.SetActive(false);
             openInven = false;
@@ -51,6 +51,7 @@ public class Inventory : MonoBehaviour
                 {
                     if (item[i] == name_items[x])
                     {
+                        Debug.Log("Checked");
                         inven_pic[i].sprite = item_sprite[x];
                         button[i].enabled = true;
                         break;
@@ -109,18 +110,19 @@ public class Inventory : MonoBehaviour
 
     public void Use_item1(string name_bot)
     {
-
         if (name_bot == "1")
         {
+            Debug.Log("can use key : " + can_use_key);
             if (item[0] == name_items[0]) 
             {
                 status.add_hunger(5);
                 item.Remove(item[0]);
             }
-            if (item[0] == name_items[1] && can_use_key == true)
+            else if (item[0] == name_items[1] && can_use_key == true)
             {
                 door_script.open(1);
                 item.Remove(item[0]);
+                Debug.Log("can use key succese");
             }
         }
         else if (name_bot == "2")
@@ -130,6 +132,12 @@ public class Inventory : MonoBehaviour
                 status.add_hunger(5);
                 item.Remove(item[1]);
             }
+            else if (item[1] == name_items[1] && can_use_key == true)
+            {
+                door_script.open(1);
+                item.Remove(item[0]);
+                Debug.Log("can use key succese");
+            }
         }
         else if (name_bot == "3")
         {
@@ -137,6 +145,12 @@ public class Inventory : MonoBehaviour
             {
                 status.add_hunger(5);
                 item.Remove(item[2]);
+            }
+            else if (item[2] == name_items[1] && can_use_key == true)
+            {
+                door_script.open(1);
+                item.Remove(item[0]);
+                Debug.Log("can use key succese");
             }
         }
         else if (name_bot == "4")
@@ -146,8 +160,13 @@ public class Inventory : MonoBehaviour
                 status.add_hunger(5);
                 item.Remove(item[3]);
             }
+            else if (item[3] == name_items[1] && can_use_key == true)
+            {
+                door_script.open(1);
+                item.Remove(item[0]);
+                Debug.Log("can use key succese");
+            }
         }
-
         Check();
     }
 
@@ -155,5 +174,19 @@ public class Inventory : MonoBehaviour
     {
         Debug.Log("Check");
         door_script = this_door.GetComponent<Door>();
+    }
+
+    public void click_icon() 
+    {
+        if (openInven == false) 
+        {
+            canvas.SetActive(true);
+            openInven = true;
+        }
+        else if (openInven == true)
+        {
+            canvas.SetActive(false);
+            openInven = false;
+        }
     }
 }

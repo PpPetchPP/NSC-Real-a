@@ -8,8 +8,8 @@ public class NPC : MonoBehaviour
     public Load_excel load_sc;
     public GameObject player;
     public GameObject panel;
+    int scene_scipt = 1;
     [SerializeField] public string name_charactor = "npc";
-    [SerializeField] public int scene_script = 1;
     public Text name, script_text;
     List<string> script = new List<string>();
     bool can_click,now_talk = false;
@@ -36,7 +36,7 @@ public class NPC : MonoBehaviour
         {
             can_click = true;
         }
-        else if (dis >= 0.3f)
+        else if (dis >= 0.3f && can_click == true)
         {
             can_click = false;
             panel.SetActive(false);
@@ -50,7 +50,7 @@ public class NPC : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && now_talk == true)
         {           
-            if (next_script < load_sc.npc_sc_talk.Count)
+            if (next_script < 2)
             {
                 script_text.text = script[next_script];
                 next_script++;
@@ -65,9 +65,10 @@ public class NPC : MonoBehaviour
                 script_text.text = "";
                 next_script = 0;
                 script.Clear();
+                scene_scipt++;
             }
         }
-        else if (Input.GetMouseButtonDown(0))
+        else if (Input.GetMouseButtonDown(0) && now_talk == false)
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, LayerMask.NameToLayer("Obj"));
             if (hit.collider != null)
@@ -98,7 +99,7 @@ public class NPC : MonoBehaviour
         {
             if (load_sc.npc_sc_talk[i].name == name_charactor)
             {
-                if (load_sc.npc_sc_talk[i].scene == scene_script ) 
+                if (load_sc.npc_sc_talk[i].scene == scene_scipt) 
                 {
                     scene = i;
                     name.text = load_sc.npc_sc_talk[i].name;
