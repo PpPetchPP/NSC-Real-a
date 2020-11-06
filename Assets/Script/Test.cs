@@ -5,6 +5,7 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
     [SerializeField] public string name_obj;
+    [SerializeField] string type;
     public GameObject player;
     public Inventory inven;
     bool can_click = false;
@@ -32,7 +33,11 @@ public class Test : MonoBehaviour
     {
         if (can_click == true)
         {
-            if (inven.Add_item(name_obj) == "not full")
+            if (type == "item" && inven.Add_item(name_obj, type) == "not full")
+            {
+                Destroy(this.gameObject);
+            }
+            else if (inven.Add_item(name_obj, type) != "" && type == "file")
             {
                 Destroy(this.gameObject);
             }

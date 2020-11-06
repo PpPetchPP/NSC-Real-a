@@ -6,13 +6,16 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public GameObject canvas;
+    public GameObject canvas_file;
     public Status_Player status;
 
     List<string> item = new List<string>();
     string[] name_items = new string[7] { "apple", "key1", "key2", "key3", "pic1", "pic2", "pic3" };
-    public Sprite[] item_sprite = new Sprite[7];
+    string[] name_file = new string[9] { "001", "002", "003", "004", "005", "006", "007", "008", "009"};
+    public Sprite[] item_sprite = new Sprite[8];
     public Image[] inven_pic = new Image[4];
     public Button[] button = new Button[4];
+    public Button[] button_file = new Button[9];
     public bool can_use_pic;
     public bool can_use_key;
     public bool openInven = false;
@@ -22,6 +25,7 @@ public class Inventory : MonoBehaviour
     {
         status = GameObject.FindGameObjectWithTag("Player").GetComponent<Status_Player>();
         canvas = GameObject.FindGameObjectWithTag("Canvas_inven");
+        canvas_file.SetActive(false);
         canvas.SetActive(false);
         Check();
     }
@@ -32,11 +36,13 @@ public class Inventory : MonoBehaviour
         {
             canvas.SetActive(true);
             openInven = true;
+            canvas_file.SetActive(false);
         }
-        else if ((Input.GetKeyDown(KeyCode.I) && openInven == true) || (Input.GetKeyDown(KeyCode.Escape) && openInven == true))
+        else if ((Input.GetKeyDown(KeyCode.I) && openInven == true) || (Input.GetKeyDown(KeyCode.Escape)/* && openInven == true*/))
         {
             canvas.SetActive(false);
             openInven = false;
+            canvas_file.SetActive(false);
         }
     }
 
@@ -93,19 +99,36 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public string Add_item(string name_item) 
+    public string Add_item(string name_item,string type) 
     {
-        if (item.Count < 4)
+        if (type == "item")
         {
-            item.Add(name_item);
-            Check();
-            check_not_full = "not full";
+            if (item.Count < 4)
+            {
+                item.Add(name_item);
+                Check();
+                check_not_full = "not full";
+            }
+            else
+            {
+                check_not_full = "Inventory full";
+            }
+            return check_not_full;
         }
-        else 
+        else if (type == "file") 
         {
-            check_not_full = "Inventory full";
+            for (int i = 0; i<9;i++) 
+            {
+                if (name_item == name_file[i]) 
+                {
+                    button_file[int.Parse(name_file[i])-1].image.sprite = item_sprite[7];
+                    button_file[int.Parse(name_file[i]) - 1].interactable = true;
+                    break;
+                }
+            }
         }
-        return check_not_full;
+        Debug.Log(name_item);
+        return name_item;
     }
 
     public void Use_item1(string name_bot)
@@ -182,11 +205,23 @@ public class Inventory : MonoBehaviour
         {
             canvas.SetActive(true);
             openInven = true;
+            canvas_file.SetActive(false);
         }
         else if (openInven == true)
         {
             canvas.SetActive(false);
             openInven = false;
+            canvas_file.SetActive(false);
+        }
+    }
+
+    public void open_file()
+    {
+        if (openInven == true)
+        {
+            canvas.SetActive(false);
+            openInven = false;
+            canvas_file.SetActive(true);
         }
     }
 }
