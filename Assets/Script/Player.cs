@@ -7,15 +7,17 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     public Status_Player status;
 
+    public GameObject skill;
     public GameObject pos,lamp_obj;
 
-    public bool lamp,check_lamp = false;
+    public bool lamp,check_lamp,use_skill = false;
     public float moveH, moveV;
     [SerializeField] public float speed = 0.5f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        skill.SetActive(false);
     }
 
     void Update()
@@ -32,7 +34,7 @@ public class Player : MonoBehaviour
         {
             speed = 0.5f;
         }
-        if (!Input.GetKey(KeyCode.LeftShift) && status.stamina <= 10)
+        if (!Input.GetKey(KeyCode.LeftShift) && status.stamina <= 10 && use_skill == false)
         {
             status.regen_stamina();
         }
@@ -40,6 +42,17 @@ public class Player : MonoBehaviour
         {
             lamp = false;
             StartCoroutine(delay(0.5f));
+        }
+        if (Input.GetMouseButton(1)) 
+        {
+            status.use_stamina();
+            skill.SetActive(true);
+            use_skill = true;
+        }
+        else if (Input.GetMouseButtonUp(1)) 
+        {
+            skill.SetActive(false);
+            use_skill = false;
         }
     }
 

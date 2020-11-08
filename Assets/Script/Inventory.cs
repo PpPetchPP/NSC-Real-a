@@ -145,7 +145,6 @@ public class Inventory : MonoBehaviour
             {
                 door_script.open(1);
                 item.Remove(item[0]);
-                Debug.Log("can use key succese");
             }
         }
         else if (name_bot == "2")
@@ -159,7 +158,6 @@ public class Inventory : MonoBehaviour
             {
                 door_script.open(1);
                 item.Remove(item[0]);
-                Debug.Log("can use key succese");
             }
         }
         else if (name_bot == "3")
@@ -173,7 +171,6 @@ public class Inventory : MonoBehaviour
             {
                 door_script.open(1);
                 item.Remove(item[0]);
-                Debug.Log("can use key succese");
             }
         }
         else if (name_bot == "4")
@@ -187,7 +184,6 @@ public class Inventory : MonoBehaviour
             {
                 door_script.open(1);
                 item.Remove(item[0]);
-                Debug.Log("can use key succese");
             }
         }
         Check();
@@ -195,7 +191,6 @@ public class Inventory : MonoBehaviour
 
     public void check_door(GameObject this_door) 
     {
-        Debug.Log("Check");
         door_script = this_door.GetComponent<Door>();
     }
 

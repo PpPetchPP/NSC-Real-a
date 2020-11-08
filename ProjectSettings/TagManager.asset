@@ -51,3 +51,6 @@ TagManager:
   - name: test
     uniqueID: 4005005081
     locked: 0
+  - name: obj
+    uniqueID: 3684555417
+    locked: 0
