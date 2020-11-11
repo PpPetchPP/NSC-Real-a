@@ -11,6 +11,7 @@ TagManager:
   - Npc_Name
   - Canvas_inven
   - FOOD
+  - Lever_con
   layers:
   - Default
   - TransparentFX
