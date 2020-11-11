@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   inven: {fileID: 0}
+  use_key: 0
   Door_number: 1
 --- !u!58 &6619352436219869542
 CircleCollider2D:

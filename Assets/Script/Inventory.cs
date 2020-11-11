@@ -117,6 +117,7 @@ public class Inventory : MonoBehaviour
         }
         else if (type == "file") 
         {
+            Debug.Log("Run");
             for (int i = 0; i<9;i++) 
             {
                 if (name_item == name_file[i]) 
@@ -135,60 +136,73 @@ public class Inventory : MonoBehaviour
     {
         if (name_bot == "1")
         {
-            Debug.Log("can use key : " + can_use_key);
-            if (item[0] == name_items[0]) 
-            {
-                status.add_hunger(5);
-                item.Remove(item[0]);
-            }
-            else if (item[0] == name_items[1] && can_use_key == true)
-            {
-                door_script.open(1);
-                item.Remove(item[0]);
-            }
+            use_button(0);
         }
         else if (name_bot == "2")
         {
-            if (item[1] == name_items[0])
-            {
-                status.add_hunger(5);
-                item.Remove(item[1]);
-            }
-            else if (item[1] == name_items[1] && can_use_key == true)
-            {
-                door_script.open(1);
-                item.Remove(item[0]);
-            }
+            use_button(1);
         }
         else if (name_bot == "3")
         {
-            if (item[2] == name_items[0])
-            {
-                status.add_hunger(5);
-                item.Remove(item[2]);
-            }
-            else if (item[2] == name_items[1] && can_use_key == true)
-            {
-                door_script.open(1);
-                item.Remove(item[0]);
-            }
+            use_button(2);
         }
         else if (name_bot == "4")
         {
-            if (item[3] == name_items[0])
-            {
-                status.add_hunger(5);
-                item.Remove(item[3]);
-            }
-            else if (item[3] == name_items[1] && can_use_key == true)
-            {
-                door_script.open(1);
-                item.Remove(item[0]);
-            }
+            use_button(3);
         }
         Check();
     }
 
+    void use_button(int slot) 
+    {
+        if (item[slot] == name_items[0])
+        {
+            status.add_hunger(5);
+            item.Remove(item[slot]);
+        }
+        else if ((item[slot] == name_items[1]) && can_use_key == true)
+        {
+            if (door_script.use_key == true)
+            {
+                item.Remove(item[slot]);
+                door_script.open2(1);
+            }
+            else door_script.open(1);
+        }
+        else if ((item[slot] == name_items[2]) && can_use_key == true)
+        {
+            if (door_script.use_key == true)
+            {
+                item.Remove(item[slot]);
+                door_script.open2(2);
+            }
+            else door_script.open(2);
+        }
+        else if ((item[slot] == name_items[3]) && can_use_key == true)
+        {
+            if (door_script.use_key == true)
+            {
+                item.Remove(item[slot]);
+                door_script.open2(3);
+            }
+            else door_script.open(3);
+        }
+        else if ((item[slot] == name_items[4]))
+        {
+            door_script.check_pic(1);
+            item.Remove(item[slot]);
+        }
+        else if ((item[slot] == name_items[5]))
+        {
+            door_script.check_pic(2);
+            item.Remove(item[slot]);
+        }
+        else if ((item[slot] == name_items[6]))
+        {
+            door_script.check_pic(3);
+            item.Remove(item[slot]);
+        }
+    }
     public void check_door(GameObject this_door) 
     {
         door_script = this_door.GetComponent<Door>();

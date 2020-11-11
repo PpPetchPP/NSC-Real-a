@@ -5,7 +5,7 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
     [SerializeField] public string name_obj;
-    [SerializeField] string type;
+    [SerializeField] public string type;
     public GameObject player;
     public Inventory inven;
     bool can_click = false;

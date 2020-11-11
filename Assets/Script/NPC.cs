@@ -9,6 +9,7 @@ public class NPC : MonoBehaviour
     public GameObject player;
     public GameObject panel;
     int scene_scipt = 1;
+    [SerializeField] int max_script;
     [SerializeField] public string name_charactor = "npc";
     public Text name, script_text;
     List<string> script = new List<string>();
@@ -65,7 +66,10 @@ public class NPC : MonoBehaviour
                 script_text.text = "";
                 next_script = 0;
                 script.Clear();
-                scene_scipt++;
+                if (scene_scipt < max_script)
+                {
+                    scene_scipt++;
+                }
             }
         }
         else if (Input.GetMouseButtonDown(0) && now_talk == false)
@@ -99,7 +103,7 @@ public class NPC : MonoBehaviour
         {
             if (load_sc.npc_sc_talk[i].name == name_charactor)
             {
-                if (load_sc.npc_sc_talk[i].scene == scene_scipt) 
+                if (load_sc.npc_sc_talk[i].scene == scene_scipt)
                 {
                     scene = i;
                     name.text = load_sc.npc_sc_talk[i].name;
