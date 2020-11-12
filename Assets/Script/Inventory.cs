@@ -10,9 +10,9 @@ public class Inventory : MonoBehaviour
     public Status_Player status;
 
     List<string> item = new List<string>();
-    string[] name_items = new string[7] { "apple", "key1", "key2", "key3", "pic1", "pic2", "pic3" };
+    string[] name_items = new string[8] { "apple", "key1", "key2", "key3", "pic1", "pic2", "pic3","key4" };
     string[] name_file = new string[9] { "001", "002", "003", "004", "005", "006", "007", "008", "009"};
-    public Sprite[] item_sprite = new Sprite[8];
+    public Sprite[] item_sprite = new Sprite[9];
     public Image[] inven_pic = new Image[4];
     public Button[] button = new Button[4];
     public Button[] button_file = new Button[9];
@@ -122,7 +122,7 @@ public class Inventory : MonoBehaviour
             {
                 if (name_item == name_file[i]) 
                 {
-                    button_file[int.Parse(name_file[i])-1].image.sprite = item_sprite[7];
+                    button_file[int.Parse(name_file[i])-1].image.sprite = item_sprite[item_sprite.Length-1];
                     button_file[int.Parse(name_file[i]) - 1].interactable = true;
                     break;
                 }
