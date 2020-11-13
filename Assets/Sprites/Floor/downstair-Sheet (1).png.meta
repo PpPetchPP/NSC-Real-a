@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: 3844de7fbb6c40143bf5fcfe2aab3419
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 696204532163670593
+    second: downstair-Sheet (1)_0
+  - first:
+      213: 5809115219136548415
+    second: downstair-Sheet (1)_1
+  - first:
+      213: -7809757412764858388
+    second: downstair-Sheet (1)_0
+  - first:
+      213: -6381967960231540975
+    second: downstair-Sheet (1)_1
+  - first:
+      213: -8458581722148367866
+    second: downstair-Sheet (1)_2
+  - first:
+      213: 3347584823566821280
+    second: downstair-Sheet (1)_3
+  - first:
+      213: 1223244595937566963
+    second: downstair-Sheet (1)_4
+  - first:
+      213: 1446595581523306217
+    second: downstair-Sheet (1)_5
+  - first:
+      213: -1850786976557740095
+    second: downstair-Sheet (1)_6
+  - first:
+      213: 1123263827584189701
+    second: downstair-Sheet (1)_7
+  - first:
+      213: -3145831911412632449
+    second: downstair-Sheet (1)_8
+  - first:
+      213: 1226931247100635313
+    second: downstair-Sheet (1)_9
+  - first:
+      213: -584614179290554239
+    second: downstair-Sheet (1)_10
+  - first:
+      213: 7266594131044057646
+    second: downstair-Sheet (1)_11
+  - first:
+      213: -6584050929669424429
+    second: downstair-Sheet (1)_12
+  - first:
+      213: 8778658541579985504
+    second: downstair-Sheet (1)_13
+  - first:
+      213: -5962543869217016499
+    second: downstair-Sheet (1)_14
+  - first:
+      213: 7998130021476606422
+    second: downstair-Sheet (1)_15
+  - first:
+      213: 2551963748908912687
+    second: downstair-Sheet (1)_16
+  - first:
+      213: 4923830673552101436
+    second: downstair-Sheet (1)_17
+  - first:
+      213: -1814880195195968102
+    second: downstair-Sheet (1)_18
+  - first:
+      213: 5985099767565800641
+    second: downstair-Sheet (1)_19
+  - first:
+      213: 6999039181318301673
+    second: downstair-Sheet (1)_20
+  - first:
+      213: -271123069863046327
+    second: downstair-Sheet (1)_21
+  - first:
+      213: -5564792616010545749
+    second: downstair-Sheet (1)_22
+  - first:
+      213: 5886612992031715622
+    second: downstair-Sheet (1)_23
+  - first:
+      213: 4320872320626739602
+    second: downstair-Sheet (1)_24
+  - first:
+      213: -3521022934037107298
+    second: downstair-Sheet (1)_25
+  - first:
+      213: 4730132344865995359
+    second: downstair-Sheet (1)_26
+  - first:
+      213: -5723501733975712408
+    second: downstair-Sheet (1)_27
+  - first:
+      213: 5814571434845771281
+    second: downstair-Sheet (1)_28
+  - first:
+      213: -3056982402112266362
+    second: downstair-Sheet (1)_29
+  - first:
+      213: -542328259438212559
+    second: downstair-Sheet (1)_30
+  - first:
+      213: 635773845822509123
+    second: downstair-Sheet (1)_31
+  - first:
+      213: 2853967194024224742
+    second: downstair-Sheet (1)_32
+  - first:
+      213: -4516702899203986262
+    second: downstair-Sheet (1)_33
+  - first:
+      213: -6159042194090127621
+    second: downstair-Sheet (1)_34
+  - first:
+      213: -4742001384240710507
+    second: downstair-Sheet (1)_35
+  - first:
+      213: 3006902122067104323
+    second: downstair-Sheet (1)_36
+  - first:
+      213: 3588669092232616670
+    second: downstair-Sheet (1)_37
+  - first:
+      213: 2419157328750540938
+    second: downstair-Sheet (1)_38
+  - first:
+      213: -1984500837524342417
+    second: downstair-Sheet (1)_39
+  - first:
+      213: -3259468019129121865
+    second: downstair-Sheet (1)_40
+  - first:
+      213: 849107246125825271
+    second: downstair-Sheet (1)_41
+  - first:
+      213: -4572318543791222777
+    second: downstair-Sheet (1)_42
+  - first:
+      213: 2718383828391122307
+    second: downstair-Sheet (1)_43
+  - first:
+      213: -2370546272841483762
+    second: downstair-Sheet (1)_44
+  - first:
+      213: 8366164329977860834
+    second: downstair-Sheet (1)_45
+  - first:
+      213: 32251890302231600
+    second: downstair-Sheet (1)_46
+  - first:
+      213: -467299701249148622
+    second: downstair-Sheet (1)_47
+  - first:
+      213: 7770802697160976528
+    second: downstair-Sheet (1)_48
+  - first:
+      213: -5784778177775166306
+    second: downstair-Sheet (1)_49
+  - first:
+      213: 5332773153171854076
+    second: downstair-Sheet (1)_50
+  - first:
+      213: -1138811039469177595
+    second: downstair-Sheet (1)_51
+  - first:
+      213: -5089679219107587350
+    second: downstair-Sheet (1)_52
+  - first:
+      213: 8801231740933461203
+    second: downstair-Sheet (1)_53
+  - first:
+      213: -1105519685805833736
+    second: downstair-Sheet (1)_54
+  - first:
+      213: 1777746905987381550
+    second: downstair-Sheet (1)_55
+  - first:
+      213: 4816729758439464155
+    second: downstair-Sheet (1)_56
+  - first:
+      213: 5850840759355332979
+    second: downstair-Sheet (1)_57
+  - first:
+      213: 8370059561792094111
+    second: downstair-Sheet (1)_58
+  - first:
+      213: -1052301246012970075
+    second: downstair-Sheet (1)_59
+  - first:
+      213: 252600661905198656
+    second: downstair-Sheet (1)_60
+  - first:
+      213: 6037608238023171095
+    second: downstair-Sheet (1)_61
+  - first:
+      213: 7980496242031546472
+    second: downstair-Sheet (1)_62
+  - first:
+      213: 5159763101944598236
+    second: downstair-Sheet (1)_63
+  - first:
+      213: 5096447642491786849
+    second: downstair-Sheet (1)_64
+  - first:
+      213: 7483742941070696380
+    second: downstair-Sheet (1)_65
+  - first:
+      213: 6011450246526046497
+    second: downstair-Sheet (1)_66
+  - first:
+      213: -3542346894685658022
+    second: downstair-Sheet (1)_67
+  - first:
+      213: -3041126307264285387
+    second: downstair-Sheet (1)_68
+  - first:
+      213: -956510768963227139
+    second: downstair-Sheet (1)_69
+  - first:
+      213: -2743292485387962930
+    second: downstair-Sheet (1)_70
+  - first:
+      213: -6547337081865951496
+    second: downstair-Sheet (1)_71
+  - first:
+      213: -718225926440082407
+    second: downstair-Sheet (1)_72
+  - first:
+      213: 4984025121801372880
+    second: downstair-Sheet (1)_73
+  - first:
+      213: -4982293164978174349
+    second: downstair-Sheet (1)_74
+  - first:
+      213: 1861523554448500278
+    second: downstair-Sheet (1)_75
+  - first:
+      213: 1860470008128373215
+    second: downstair-Sheet (1)_76
+  - first:
+      213: -8659012180619203503
+    second: downstair-Sheet (1)_77
+  - first:
+      213: 4149693871306241791
+    second: downstair-Sheet (1)_78
+  - first:
+      213: -8108630734006307175
+    second: downstair-Sheet (1)_79
+  - first:
+      213: -3030886164961725593
+    second: downstair-Sheet (1)_80
+  - first:
+      213: 1680883977468039942
+    second: downstair-Sheet (1)_81
+  - first:
+      213: 6326113524126154198
+    second: downstair-Sheet (1)_82
+  - first:
+      213: 3374077308838897917
+    second: downstair-Sheet (1)_83
+  - first:
+      213: -1120710267628590234
+    second: downstair-Sheet (1)_84
+  - first:
+      213: -2185810658170565407
+    second: downstair-Sheet (1)_85
+  - first:
+      213: 8351719193046196516
+    second: downstair-Sheet (1)_86
+  - first:
+      213: -521154223261752042
+    second: downstair-Sheet (1)_87
+  - first:
+      213: 9222914880670134231
+    second: downstair-Sheet (1)_88
+  - first:
+      213: 733943601541017134
+    second: downstair-Sheet (1)_89
+  - first:
+      213: 4302408311241195751
+    second: downstair-Sheet (1)_90
+  - first:
+      213: -1147949250074698982
+    second: downstair-Sheet (1)_91
+  - first:
+      213: 5862488509866738886
+    second: downstair-Sheet (1)_92
+  - first:
+      213: 3813272582681890128
+    second: downstair-Sheet (1)_93
+  - first:
+      213: 8642315570232156523
+    second: downstair-Sheet (1)_94
+  - first:
+      213: 5791232106336274562
+    second: downstair-Sheet (1)_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: downstair-Sheet (1)_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 95
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 2, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce74d2ec20b2e9390800000000000000
+      internalID: -7809757412764858388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downstair-Sheet (1)_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2
+        width: 95
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 2, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117897a04f1be67a0800000000000000
+      internalID: -6381967960231540975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
