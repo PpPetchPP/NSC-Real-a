@@ -7,12 +7,13 @@ public class Inventory : MonoBehaviour
 {
     public GameObject canvas;
     public GameObject canvas_file;
+    public GameObject this_door;
     public Status_Player status;
 
     List<string> item = new List<string>();
-    string[] name_items = new string[8] { "apple", "key1", "key2", "key3", "pic1", "pic2", "pic3","key4" };
+    string[] name_items = new string[11] { "apple", "key1", "key2", "key3", "pic1", "pic2", "pic3","key4","book","tra","Lastbook" };
     string[] name_file = new string[9] { "001", "002", "003", "004", "005", "006", "007", "008", "009"};
-    public Sprite[] item_sprite = new Sprite[9];
+    public Sprite[] item_sprite = new Sprite[12];
     public Image[] inven_pic = new Image[4];
     public Button[] button = new Button[4];
     public Button[] button_file = new Button[9];
@@ -187,25 +188,52 @@ public class Inventory : MonoBehaviour
             }
             else door_script.open(3);
         }
-        else if ((item[slot] == name_items[4]))
+        else if ((item[slot] == name_items[4]) && this_door.gameObject.tag == "pic")
         {
             door_script.check_pic(1);
             item.Remove(item[slot]);
         }
-        else if ((item[slot] == name_items[5]))
+        else if ((item[slot] == name_items[5]) && this_door.gameObject.tag == "pic")
         {
             door_script.check_pic(2);
             item.Remove(item[slot]);
         }
-        else if ((item[slot] == name_items[6]))
+        else if ((item[slot] == name_items[6]) && this_door.gameObject.tag == "pic")
         {
             door_script.check_pic(3);
             item.Remove(item[slot]);
         }
+        else if ((item[slot] == name_items[7]) && this_door.gameObject.tag == "door2")
+        {
+            door_script.open(4);
+            item.Remove(item[slot]);
+        }
+        else if ((item[slot] == name_items[8]) && this_door.gameObject.tag == "hide_wall")
+        {
+            door_script.check_book();
+            item.Remove(item[slot]);
+        }
+        else if ((item[slot] == name_items[9]) && this_door.gameObject.tag == "door3")
+        {
+            door_script.open(5);
+        }
+        else if ((item[slot] == name_items[10]) && (this_door.gameObject.tag == "NPC" || this_door.gameObject.tag == "door4"))
+        {
+            if (this_door.gameObject.tag == "NPC") 
+            {
+                door_script.dust();
+            }
+            else if (this_door.gameObject.tag == "door4")
+            {
+                door_script.open(0);
+            }
+            item.Remove(item[slot]);
+        }
     }
-    public void check_door(GameObject this_door) 
+    public void check_door(GameObject this_door2) 
     {
-        door_script = this_door.GetComponent<Door>();
+        door_script = this_door2.GetComponent<Door>();
+        this_door = this_door2;
     }
 
     public void click_icon() 

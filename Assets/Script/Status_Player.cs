@@ -23,7 +23,7 @@ public class Status_Player : MonoBehaviour
 
     public void use_stamina() 
     {
-        stamina -= Time.deltaTime;
+        //stamina -= Time.deltaTime;
     }
     public void regen_stamina() 
     {

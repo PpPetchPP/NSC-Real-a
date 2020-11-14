@@ -12,6 +12,12 @@ TagManager:
   - Canvas_inven
   - FOOD
   - Lever_con
+  - hide_wall
+  - door2
+  - door3
+  - dust
+  - pic
+  - door4
   layers:
   - Default
   - TransparentFX

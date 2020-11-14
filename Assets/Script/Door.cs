@@ -73,6 +73,20 @@ public class Door : MonoBehaviour
         }
     }
 
+    public void check_book()
+    {
+        if (can_click == true)
+        {
+            anim.SetBool("open",true);
+            Destroy(this.gameObject, 2f);
+        }
+    }
+
+    public void dust() 
+    {
+
+    }
+
     protected void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -88,6 +102,7 @@ public class Door : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             inven.can_use_key = false;
+            inven.this_door = null;
             can_click = false;
         }
     }
