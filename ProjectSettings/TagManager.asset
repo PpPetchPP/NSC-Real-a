@@ -18,6 +18,7 @@ TagManager:
   - dust
   - pic
   - door4
+  - END
   layers:
   - Default
   - TransparentFX

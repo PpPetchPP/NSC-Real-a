@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    public end loser;
     public Animator anim;
     public Inventory inven;
     public GameObject pic1, pic2, pic3,key,pos;
@@ -84,7 +85,7 @@ public class Door : MonoBehaviour
 
     public void dust() 
     {
-
+        loser.lose();
     }
 
     protected void OnTriggerStay2D(Collider2D collision)

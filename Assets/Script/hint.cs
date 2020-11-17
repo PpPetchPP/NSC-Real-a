@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class warp : MonoBehaviour
+public class hint : MonoBehaviour
 {
-    public UnityEngine.Experimental.Rendering.Universal.Light2D SUN;
-    public GameObject pos;
+    public GameObject canvas;
     public GameObject player;
     [SerializeField] bool can_click = false;
     void Start()
@@ -13,6 +12,7 @@ public class warp : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
+    // Update is called once per frame
     void Update()
     {
         float dis = Vector2.Distance(this.transform.position, player.transform.position);
@@ -23,15 +23,18 @@ public class warp : MonoBehaviour
         else if (dis >= 1f && can_click == true)
         {
             can_click = false;
+            canvas.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.I))
+        {
+            canvas.SetActive(false);
         }
     }
-
     private void OnMouseDown()
     {
         if (can_click == true)
         {
-            player.transform.position = pos.transform.position;
-            SUN.intensity = 0.1f;
+            canvas.SetActive(true);
         }
     }
 }
