@@ -31,7 +31,7 @@ public class warp : MonoBehaviour
         if (can_click == true)
         {
             player.transform.position = pos.transform.position;
-            SUN.intensity = 0.1f;
+            SUN.intensity = 0.2f;
         }
     }
 }

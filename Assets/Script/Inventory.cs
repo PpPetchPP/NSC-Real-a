@@ -222,12 +222,12 @@ public class Inventory : MonoBehaviour
             if (this_door.gameObject.tag == "NPC") 
             {
                 door_script.dust();
+                item.Remove(item[slot]);
             }
             else if (this_door.gameObject.tag == "door4")
             {
                 door_script.open(0);
             }
-            item.Remove(item[slot]);
         }
     }
     public void check_door(GameObject this_door2) 

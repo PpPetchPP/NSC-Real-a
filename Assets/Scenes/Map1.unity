@@ -29325,6 +29325,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 27383785}
     m_Modifications:
+    - target: {fileID: 514638583080704483, guid: 3920ec00091a25f40bc09196c7e38bad, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d2053c6939d4cb24c81a460091291af4, type: 3}
     - target: {fileID: 514638583080704484, guid: 3920ec00091a25f40bc09196c7e38bad, type: 3}
       propertyPath: name_obj
       value: Lastbook
@@ -29372,6 +29376,18 @@ PrefabInstance:
     - target: {fileID: 514638583080704486, guid: 3920ec00091a25f40bc09196c7e38bad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 514638583080704486, guid: 3920ec00091a25f40bc09196c7e38bad, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 514638583080704486, guid: 3920ec00091a25f40bc09196c7e38bad, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 514638583080704486, guid: 3920ec00091a25f40bc09196c7e38bad, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 514638583080704487, guid: 3920ec00091a25f40bc09196c7e38bad, type: 3}
       propertyPath: m_Name

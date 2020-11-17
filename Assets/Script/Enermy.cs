@@ -7,7 +7,7 @@ public class Enermy : MonoBehaviour
     public end loser;
     Transform trans_target;
     int i_waypointIndex = 0;
-    int f_enemySpeed = 1;
+    float f_enemySpeed = 0.75f;
     public Waypoint waypoint;
     bool found_player = false;
 
